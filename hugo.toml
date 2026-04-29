@@ -1,0 +1,31 @@
+baseURL = "https://decsdesk.com/"
+languageCode = "en-us"
+title = "Decsdesk"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "Decsdesk — part of Agency Outfitter."
+  author = "Agency Outfitter"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "Decsdesk"
+    Content = "Decsdesk — part of Agency Outfitter."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hello@agencyoutfitter.com"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
